@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\Nouveau dossier (2)\Release\Test GuI DEMO.vcxproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\Nouveau dossier (2)\Release\TestGuIDEMO.MyForm.resources
+C:\Users\lenovo\Desktop\Nouveau dossier (2)\Release\Test GuI DEMO.vcxproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\Nouveau dossier (2)\Release\TestGuIDEMO.exe
