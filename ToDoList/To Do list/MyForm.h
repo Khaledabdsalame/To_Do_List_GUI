@@ -1,5 +1,6 @@
 #pragma once
-
+#include<ctime>
+#include<chrono>
 
 namespace TestGuIDEMO {
 
@@ -9,15 +10,16 @@ namespace TestGuIDEMO {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+        std::time_t currentTime = std::time(nullptr);
+        std::tm* localTime = std::localtime(&currentTime);
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
-		
-		int Sec_Default=0;
-		int Min_Default=0;
+		int Sec_Default= localTime->tm_sec;
+                int Min_Default= localTime->tm_min;
+                int Hour_Default = localTime->tm_hour;
 	private: System::Windows::Forms::MonthCalendar^ monthCalendar1;
 	private: System::Windows::Forms::Button^ button4;
 
@@ -47,7 +49,7 @@ namespace TestGuIDEMO {
 
 
 
-		   int Hour_Default = 0;
+		  
 	public:
 		MyForm(void)
 		{
